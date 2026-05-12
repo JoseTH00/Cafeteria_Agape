@@ -4,26 +4,6 @@
     --rosa-oscuro: #f6b0bb;
     --verde-claro: #9cad8c;
     --verde-oscuro: #7e8c69;
-
-    /* RGB para sombras */
-    --rosa-oscuro-rgb: 246, 176, 187;
-}
-
-/* Fondo */
-body {
-    background-color: var(--cremita);
-}
-
-/* Navbar */
-.navbar {
-    background-color: var(--rosa-oscuro);
-}
-
-/* Logo */
-#brand {
-    font-family: "Berkshire Swash", serif;
-    font-size: 30px;
-    word-spacing: 8px; /* corregido */
 }
 
 /* Layout principal */
@@ -33,33 +13,14 @@ body {
 
 /* Contenedor centrado */
 #contenidoPrincipal {
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 190px);
 }
 
 /* Card */
 .login-card {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 12px;
-}
-
-/* Botón */
-.btn-primary {
-    background-color: var(--rosa-claro);
-    border-color: var(--rosa-claro);
-    color: black;
-}
-
-.btn-primary:hover {
-    background-color: var(--rosa-oscuro);
-    border-color: var(--rosa-oscuro);
-    color: black;
-}
-
-.btn-primary:active {
-    background-color: var(--rosa-claro) !important;
-    border-color: var(--rosa-oscuro) !important;
-    color: black;
 }
 
 /* Checkbox */
@@ -74,11 +35,11 @@ body {
 }
 
 /* Links */
-a {
+#contrasena {
     color: var(--verde-oscuro);
     text-decoration: none;
 }
 
-a:hover {
+#contrasena:hover {
     font-size: large;
 }
