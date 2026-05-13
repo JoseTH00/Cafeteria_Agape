@@ -30,7 +30,7 @@
 
 /* Banner */
 .banner {
-    height: 90vh;
+    height: 86vh;
     width: 100%;
 }
 
@@ -382,6 +382,7 @@
 
     .bannerMovil {
         display: block;
+        height: 86vh;
         width: 100%;
     }
 }
