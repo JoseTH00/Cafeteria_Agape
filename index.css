@@ -34,6 +34,10 @@
     width: 100%;
 }
 
+.bannerMovil {
+    display: none;
+}
+
 /* Menu*/
 #menu {
     padding: 80px 0;
@@ -91,7 +95,7 @@
 }
 
 .menu-logo {
-    width: 20px; 
+    width: 20px;
     height: 20px;
 }
 
@@ -101,7 +105,7 @@
     overflow: hidden;
     border: 1.5px solid #e9ecef;
     background: #fff;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .especial-img-wrapper {
@@ -199,7 +203,7 @@
     border-radius: 1rem;
     padding: 1.5rem;
     height: 100%;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
     background: #fff;
 }
 
@@ -245,7 +249,7 @@
     border: none;
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
     background: #fff;
 }
 
@@ -273,9 +277,9 @@
     transition: color 0.15s;
 }
 
-.star-rating input:checked ~ label,
+.star-rating input:checked~label,
 .star-rating label:hover,
-.star-rating label:hover ~ label {
+.star-rating label:hover~label {
     color: #ffc107;
 }
 
@@ -333,7 +337,7 @@
 /* Footer */
 .footer {
     background-color: var(--rosa-oscuro);
-    box-shadow: 0 -2px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.15);
 }
 
 .logo-footer {
@@ -343,24 +347,24 @@
 }
 
 .navbar-brand-footer {
-        font-family: "Berkshire Swash", serif;
+    font-family: "Berkshire Swash", serif;
     font-size: 28px;
     letter-spacing: 4px;
     word-spacing: 4px;
     color: black;
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
 
-	.navbar .container-fluid{
-		position: relative;
-	}
+    .navbar .container-fluid {
+        position: relative;
+    }
 
-	.navbar-brand{
-		position: absolute;
-		left: 49.5%;
-		transform: translateX(-50%);
-	}
+    .navbar-brand {
+        position: absolute;
+        left: 49.5%;
+        transform: translateX(-50%);
+    }
 
 }
 
@@ -373,6 +377,11 @@
 
 @media (max-width: 376px) {
     .banner {
-        height: 0px;
+        display: none;
+    }
+
+    .bannerMovil {
+        display: block;
+        width: 100%;
     }
 }
