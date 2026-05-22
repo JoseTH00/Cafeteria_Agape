@@ -8,14 +8,14 @@
 		content="Café Ágape, cafetería en Resistencia con café de especialidad, desayunos y meriendas artesanales en un ambiente cálido y acogedor.">
 	<meta name="author" content="Café Ágape">
 	<meta http-equiv="Content-Language" content="es">
-	<title>Café Ágape | Inicio de Sesion</title>
+	<title>Café Ágape | Crear Cuenta</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="inicioSesion.css">
-	<link rel="stylesheet" href="global.css">
+	<link rel="stylesheet" href="../css/inicioSesion.css">
+	<link rel="stylesheet" href="../css/global.css">
 </head>
 
 <body>
@@ -108,48 +108,34 @@
 	</header>
 	<main class="main-login">
 		<div class="container">
-
-			<button onclick="history.back()" class="btn shadow btn-primary py-2 px-4 my-4">Volver</button>
-
-			<div id="contenidoPrincipal" class="d-flex justify-content-center align-items-center">
-
+			<button onclick="history.back()" class="btn shadow btn-primary p-2 px-4 mt-4 mb-4">Volver</button>
+			<div id="contenidoPrincipal" class="d-flex mb-5 justify-content-center align-items-center">
 				<div class="card p-4 shadow login-card">
-
-					<h3 class="text-center mb-4">Iniciar sesión</h3>
-
+					<h3 class="text-center mb-4">Crear cuenta</h3>
 					<form action="gestionUsuario.html">
+						<div class="mb-3">
+							<label for="text" class="form-label">Nombre de usuario</label>
+							<input type="text" class="form-control" id="text" maxlength="50" required>
+						</div>
 						<div class="mb-3">
 							<label for="email" class="form-label">Correo electrónico</label>
 							<input type="email" class="form-control" id="email" placeholder="ejemplo@mail.com"
 								minlength="10" maxlength="50" required>
 						</div>
-
 						<div class="mb-3">
 							<label for="password" class="form-label">Contraseña</label>
 							<input type="password" class="form-control" id="password" placeholder="minimo 8 caracteres"
 								minlength="8" maxlength="50" required>
 						</div>
-
 						<div class="mb-3 form-check">
 							<input type="checkbox" class="form-check-input" id="remember">
 							<label class="form-check-label" for="remember">Recordarme</label>
 						</div>
-
 						<button type="submit" class="btn shadow btn-primary w-100">
-							Ingresar
+							Crear cuenta
 						</button>
 					</form>
-
-					<div class="text-center mt-3">
-						<a id="contrasena" href="reestablecerContrasena.html">¿Olvidaste tu contraseña?</a>
-					</div>
-
-					<div class="text-center mt-3">
-						<a id="contrasena" href="crearCuenta.html">¿No tienes cuenta? Crear una</a>
-					</div>
-
 				</div>
-
 			</div>
 		</div>
 	</main>
